@@ -1,0 +1,109 @@
+:root {
+  color-scheme: light;
+  font-family: "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+    sans-serif;
+  background-color: #f5f7fb;
+  color: #1f2933;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page {
+  width: min(960px, 92vw);
+  padding: 24px 0 32px;
+  display: grid;
+  gap: 24px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.header h1 {
+  margin: 0 0 4px;
+  font-size: 2rem;
+}
+
+.header p {
+  margin: 0;
+  color: #52606d;
+}
+
+.stats {
+  display: flex;
+  gap: 16px;
+  font-weight: 600;
+  color: #334e68;
+}
+
+.game-panel {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+  display: grid;
+  gap: 16px;
+  justify-items: center;
+}
+
+canvas {
+  background: #0f172a;
+  border-radius: 12px;
+  width: min(480px, 80vw);
+  height: auto;
+  border: 2px solid #1d4ed8;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 999px;
+  background: #1d4ed8;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.1s ease, background 0.2s ease;
+}
+
+button:hover {
+  background: #1e40af;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.status {
+  font-weight: 600;
+  color: #1d4ed8;
+}
+
+@media (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    align-items: center;
+  }
+}
