@@ -37,9 +37,9 @@ const randomCell = () => ({
 
 const resetGame = () => {
   snake = [
-    { x: 8, y: 12 },
-    { x: 7, y: 12 },
-    { x: 6, y: 12 },
+    { x: 8, y: 11 },
+    { x: 7, y: 11 },
+    { x: 6, y: 11 },
   ];
   direction = { x: 1, y: 0 };
   nextDirection = { ...direction };
